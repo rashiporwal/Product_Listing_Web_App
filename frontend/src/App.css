@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Maven+Pro:wght@400..900&family=Quicksand:wght@300..700&display=swap');
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  background-color: antiquewhite;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  text-align: center;
+  padding: 10px;
+}
+
+.shop-title {
+  color: #222;
+  margin-bottom: 2rem;
+  font-size: 40px;
+  text-shadow: 2px 3px 4px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 8px;
+  margin-top: 20px;
+  height: 55px;
+  padding-bottom: 20px;
+}
+
+.dropdown {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+.product-container {
+  display: grid;
+  gap: 24px;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Large desktop screens: 4 columns */
+@media (min-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    margin: 40px auto; 
+    padding: 0 40px;
+    max-width: 1400px;
+  }
+}
+
+/* Tablet screens: 2 columns */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone screens: 1 column */
+@media (max-width: 467px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+  .product-card img {
+    max-width: 300px;
+    height: 100px;
+}
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 380px; 
+  padding: 1rem;
+  box-shadow: 1px 5px 20px 2px black;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height:200px ;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+  padding: 10px 0 10px 3px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px black;
+  transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.08);
+}
+
+.product-card h1 {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  height: 50px; 
+  overflow: hidden;
+}
+
+.category {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 0 0 8px 0;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  color: #0b9a68;
+  font-weight: bold;
+  border: 1px solid green;
+  height: 40px; 
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 0 auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.price:hover {
+  background-color: #0b9a68;
+  color: #fff;
+  border-color: #0b9a68;
+}
+
+.showmore-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.showmore-btn {
+  padding: 10px 20px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+  box-shadow: 2px 2px 30px 0px black;
+}
+
+.showmore-btn:hover {
+  background-color: #7bdcd1;
+  color: #222;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  font-size: 1.2rem;
+  color: #2a9d8f;
+}
+
+.spinner {
+  border: 4px dotted #f3f3f3;
+  border-top: 4px dotted #2a9d8f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer {
+  color: #434440;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  text-shadow: 6px 2px 10px  black;
+}
+
+
+
+
+@media (max-width: 467px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 80px;
+  }
+
+  .footer {
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
+
+}
