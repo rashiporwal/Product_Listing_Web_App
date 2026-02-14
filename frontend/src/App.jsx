@@ -25,7 +25,8 @@ const App = () => {
   }, []);
 
   const categories = ["All", ...new Set(products.map((p) => p.category))];
-
+  
+  {/* filtering Products */}
   const filteredProducts =
     selectedCategory === "All"
       ? products.slice(0, visibleCount)
@@ -69,7 +70,7 @@ const App = () => {
           <p>Loading products...</p>
         </div>
       ) : (
-        <>
+        <> 
           <div className="product-container">
             {filteredProducts.map((product) => (
               <div key={product.id} className="product-card">

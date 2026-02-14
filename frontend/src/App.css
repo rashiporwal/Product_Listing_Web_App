@@ -54,6 +54,7 @@ body {
   box-sizing: border-box;
 }
 
+/* For Responsiveness */
 /* Large desktop screens: 4 columns */
 @media (min-width: 1200px) {
   .product-container {
@@ -77,10 +78,16 @@ body {
   .product-container {
     grid-template-columns: 1fr;
     max-width: 300px;
+    margin-bottom: 80px;
   }
   .product-card img {
     max-width: 300px;
     height: 100px;
+}
+  .footer {
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 140px;
 }
 }
 
@@ -216,16 +223,4 @@ body {
 
 
 
-@media (max-width: 467px) {
-  .product-container {
-    grid-template-columns: 1fr;
-    margin-bottom: 80px;
-  }
 
-  .footer {
-  padding: 15px;
-  margin-top: 30px;
-  margin-bottom: 140px;
-}
-
-}
