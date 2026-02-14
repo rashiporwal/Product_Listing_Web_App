@@ -3,9 +3,9 @@
 A modern, responsive web application built with React, Vite, and TailwindCSS.  
 This app displays products in a clean grid layout with hover effects, category filtering, and sorting functionality for an intuitive browsing experience.
 ## Live Demo
-The app is deployed and available here: [Product Listing Web App](https://productlisting-7zwpj8o1y-rashis-projects-064245c1.vercel.app/)
+The app is deployed and available here: [Product Listing Web App](https://productlistingapp-delta.vercel.app/?_vercel_share=hv0Xeo9CZsgD0wfk4HmSN1Xo65PWqVoQ)
 ```
-https://product-listing-web-app.vercel.app
+https://productlistingapp-delta.vercel.app/?_vercel_share=hv0Xeo9CZsgD0wfk4HmSN1Xo65PWqVoQ
 ```
 ---
 
